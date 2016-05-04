@@ -1,0 +1,99 @@
+{
+  "targetTableName" : "T_CMDB_SERVER_AR",
+  "fieldMapings" : [ {
+    "targetName" : "UCMDB_ID",
+    "sourceName" : "GLOBAL_ID",
+    "method" : "direct",
+    "type" : "RAW"
+  }, {
+    "targetName" : "TYPE",
+    "sourceName" : "GLOBAL_ID",
+    "method" : "constant",
+    "type" : "String",
+    "defaultValue" : null
+  }, {
+    "targetName" : "SUBTYPE",
+    "sourceName" : "GLOBAL_ID",
+    "method" : "direct",
+    "type" : "String",
+    "defaultValue" : null
+  }, {
+    "targetName" : "IPADDRESS",
+    "sourceName" : "GLOBAL_ID",
+    "method" : "direct",
+    "type" : "String",
+    "defaultValue" : null
+  }, {
+    "targetName" : "NETWORK_NAME",
+    "sourceName" : "HOST_NAME",
+    "method" : "direct",
+    "type" : "String",
+    "defaultValue" : null
+  }, {
+    "targetName" : "OPERATING_SYSTEM",
+    "sourceName" : "OS_NAME",
+    "method" : "direct",
+    "type" : "String",
+    "defaultValue" : null
+  }, {
+    "targetName" : "OWNER",
+    "sourceName" : "GLOBAL_ID",
+    "method" : "direct",
+    "type" : "String",
+    "defaultValue" : null
+  }, {
+    "targetName" : "SUPPORT_CONTACTS",
+    "sourceName" : "GLOBAL_ID",
+    "method" : "direct",
+    "type" : "String",
+    "defaultValue" : null
+  }, {
+    "targetName" : "LOCATION",
+    "sourceName" : "GLOBAL_ID",
+    "method" : "direct",
+    "type" : "String",
+    "defaultValue" : null
+  }, {
+    "targetName" : "ENVIRONMENT",
+    "sourceName" : "GLOBAL_ID",
+    "method" : "direct",
+    "type" : "String",
+    "defaultValue" : null
+  }, {
+    "targetName" : "SERIAL_NO_",
+    "sourceName" : "SERIALNUMBER",
+    "method" : "direct",
+    "type" : "String",
+    "defaultValue" : null
+  }, {
+    "targetName" : "TCP_IP_NAME",
+    "sourceName" : "GLOBAL_ID",
+    "method" : "direct",
+    "type" : "String",
+    "defaultValue" : null
+  }, {
+    "targetName" : "LOCATION_CODE",
+    "sourceName" : "GLOBAL_ID",
+    "method" : "direct",
+    "type" : "String",
+    "defaultValue" : null
+  }, {
+    "targetName" : "ESTATUS",
+    "sourceName" : "GLOBAL_ID",
+    "method" : "direct",
+    "type" : "String",
+    "defaultValue" : null
+  }, {
+    "targetName" : "ISTATUS",
+    "sourceName" : null,
+    "method" : "constant",
+    "type" : "String",
+    "defaultValue" : "Installed"
+  }, {
+    "targetName" : "WMI_LASTSCAN",
+    "sourceName" : null,
+    "method" : "direct",
+    "type" : "date",
+    "defaultValue" : null
+  } ]
+}

@@ -1,0 +1,28 @@
+{
+  "databaseConfig" : {
+    "sm" : {
+      "name" : "sm",
+      "dbType" : "MSSQL",
+      "url" : "jdbc:sqlserver://16.77.8.187;databaseName=SMDB",
+      "userName" : "xrpcig",
+      "password" : "Passw0rd",
+      "timeOut" : 120000000
+    },
+    "xrp" : {
+      "name" : "xrp",
+      "dbType" : "ORACLE",
+      "url" : "jdbc:oracle:thin:@16.77.9.83:1521/XRPDB",
+      "userName" : "xrp",
+      "password" : "Passw0rd",
+      "timeOut" : 120000000
+    },
+    "ud" : {
+      "name" : "ud",
+      "dbType" : "ORACLE",
+      "url" : "jdbc:oracle:thin:@16.77.9.83:1521:xpr",
+      "userName" : "cmdb",
+      "password" : "Passw0rd",
+      "timeOut" : 120000000
+    }
+  }
+}

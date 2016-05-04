@@ -1,0 +1,21 @@
+{
+  "targetTableName" : "AR_CMDB_APPLICATION_SERVER",
+  "fieldMapings" : [
+	{ "targetName" : "UPSTREAMCI_LOGICAL_NAME", "sourceName" : "UPSTREAMCI_LOGICAL_NAME", "method" : "direct", "type" : "String" },
+	{ "targetName" : "DOWNSTREAMCI_LOGICAL_NAME", "sourceName" : "DOWNSTREAMCI_LOGICAL_NAME", "method" : "direct", "type" : "String" },
+	{ "targetName" : "UPSTREAMCI_TYPE", "sourceName" : "UPSTREAMCI_TYPE", "method" : "direct", "type" : "String" },
+	{ "targetName" : "DOWNSTREAMCI_TYPE", "sourceName" : "DOWNSTREAMCI_TYPE", "method" : "direct", "type" : "String" },
+	{ "targetName" : "UPSTREAMCI_SUBTYPE", "sourceName" : "UPSTREAMCI_SUBTYPE", "method" : "direct", "type" : "String" },
+	{ "targetName" : "DOWNSTREAMCI_SUBTYPE", "sourceName" : "DOWNSTREAMCI_SUBTYPE", "method" : "direct", "type" : "String" },
+	{ "targetName" : "RELATIONSHIP_TYPE", "sourceName" : "RELATIONSHIP_TYPE", "method" : "direct", "type" : "String" },
+	{ "targetName" : "RELATIONSHIP_SUBTYPE", "sourceName" : "RELATIONSHIP_SUBTYPE", "method" : "direct", "type" : "String" },
+	{ "targetName" : "STATUS", "sourceName" : "STATUS", "method" : "direct", "type" : "String" },
+	{ "targetName" : "UPSTREAMCI_ID", "sourceName" : "UPSTREAMCI_ID", "method" : "direct", "type" : "Number" },
+	{ "targetName" : "DOWNSTREAMCI_ID", "sourceName" : "DOWNSTREAMCI_ID", "method" : "direct", "type" : "String" },
+	{ "targetName" : "CREATE_DATETIME", "sourceName" : "CREATE_DATETIME", "method" : "direct", "type" : "Date" },
+	{ "targetName" : "UPDATE_DATETIME", "sourceName" : "UPDATE_DATETIME", "method" : "direct", "type" : "Date" },
+	{ "targetName" : "UPSTREAMCI_UCMDB_ID", "sourceName" : "UPSTREAMCI_UCMDB_ID", "method" : "direct", "type" : "String" },
+	{ "targetName" : "DOWNSTREAMCI_UCMDB_ID", "sourceName" : "DOWNSTREAMCI_UCMDB_ID", "method" : "direct", "type" : "String" },
+	{ "targetName" : "RELATIONSHIP_NAME", "sourceName" : "RELATIONSHIP_NAME", "method" : "direct", "type" : "String" }   
+  ]
+}
