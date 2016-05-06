@@ -104,15 +104,17 @@ public class XrpDataConnector extends DataConnector {
 			String hostName = (String) server.get("HOST_NAME");
 			String globalId =  new String( RAW.newRAW(server.get("GLOBAL_ID")).stringValue() );
 			//System.out.println( ">>> " + hostName);
-			if( smMapLogicalName.get(hostName.toLowerCase()) != null) {
-				servers.remove(smMapLogicalName.get(hostName.toLowerCase()));
-				Map<String, Object> mergedServer = mergeServer( server, smMapLogicalName.get(hostName) );
-				servers.add(mergedServer);
-			} else {
-				if( smMapUcmdbId.get(globalId.toLowerCase()) != null) {
-					servers.add(mergeServer( server, smMapUcmdbId.get(globalId) ));
+			if( hostName != null ) {
+				if( smMapLogicalName.get(hostName.toLowerCase()) != null) {
+ 					servers.remove(smMapLogicalName.get(hostName.toLowerCase()));
+					Map<String, Object> mergedServer = mergeServer( server, smMapLogicalName.get(hostName) );
+					servers.add(mergedServer);
 				} else {
-					servers.add(appendUdServer( server ));
+					if( smMapUcmdbId.get(globalId.toLowerCase()) != null) {
+						servers.add(mergeServer( server, smMapUcmdbId.get(globalId) ));
+					} else {
+						servers.add(appendUdServer( server ));
+					}
 				}
 			}
 		}
