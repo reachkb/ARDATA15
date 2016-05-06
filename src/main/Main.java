@@ -19,13 +19,11 @@ public class Main {
 	final static Logger logger = Logger.getLogger(Main.class);
 
 	public static void main( String[] args ) throws Exception {
-//		MetricDao md = new MetricDao();
-//		System.out.println(md.getMetricDefinitions());
-//		System.out.println(md.getCurrentMetrices());
-//		System.out.println(md.getPreviousMetrices());
-
-		loadData(args);
-		
+		try {
+			loadData(args);
+		} catch( Exception ex ) {
+			logger.error("Failed to load data", ex );
+		}
 	}
 	
 	public static void loadData( String[] args ) throws Exception {
