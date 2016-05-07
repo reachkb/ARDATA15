@@ -26,7 +26,7 @@ public class DiscoveryDao {
 	}
 	
 	public int getNonDiscoveredServerRemediationTotal() {
-		String sql = "SELECT COUNT(*) AS COUNT FROM AR_XRP_SERVER WHERE XRP_SOURCE = 'UD' AND LOGICAL_NAME NOT IN (SELECT HOSTNAME FROM AR_DISCOVERY_EXCEPTIONS WHERE ACTIVE='Y')";
+		String sql = "SELECT COUNT(*) AS COUNT FROM AR_XRP_SERVER WHERE XRP_SOURCE = 'SM' AND LOGICAL_NAME NOT IN (SELECT HOSTNAME FROM AR_DISCOVERY_EXCEPTIONS WHERE ACTIVE='Y')";
 		int count = 0;
 		try {
 			NamedParameterStatement namedParameterStatement = new NamedParameterStatement(DBConnect.getConnection("xrp"), sql);
