@@ -10,6 +10,7 @@ import org.apache.log4j.Logger;
 import connector.SmDataConnector;
 import connector.UdDataConnector;
 import connector.XrpDataConnector;
+import util.EmailUtil;
 import xrp.model.Metric;
 import xrp.service.MetricService;
 
@@ -21,8 +22,10 @@ public class Main {
 	public static void main( String[] args ) throws Exception {
 		try {
 			loadData(args);
+			
 		} catch( Exception ex ) {
 			logger.error("Failed to load data", ex );
+			//EmailUtil.sendMail("From Adil", "This is a test message");
 		}
 	}
 	
