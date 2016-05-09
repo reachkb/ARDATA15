@@ -6,17 +6,28 @@ import java.util.List;
 public class AreaChart {
 	private String chartName;
 	private int count;
+	private int total;
 	private int change;
 	private int percentage;
 	private List<AreaChartData> data;
 	
-	public AreaChart(String chartName, int count, int change, int percentage, List<AreaChartData> data) {
+
+	
+	
+	public AreaChart(String chartName, int count, int total, int change, int percentage, List<AreaChartData> data) {
 		super();
 		this.chartName = chartName;
 		this.count = count;
+		this.total = total;
 		this.change = change;
 		this.percentage = percentage;
 		this.data = data;
+	}
+	public int getTotal() {
+		return total;
+	}
+	public void setTotal(int total) {
+		this.total = total;
 	}
 	public String getChartName() {
 		return chartName;
@@ -48,11 +59,12 @@ public class AreaChart {
 	public void setData(List<AreaChartData> data) {
 		this.data = data;
 	}
-
 	@Override
 	public String toString() {
-		return "AreaChart [chartName=" + chartName + ", count=" + count + ", change=" + change + ", percentage="
-				+ percentage + ", data=" + data + "]";
+		return "AreaChart [chartName=" + chartName + ", count=" + count + ", total=" + total + ", change=" + change
+				+ ", percentage=" + percentage + ", data=" + data + "]";
 	}
+
+
 	
 }

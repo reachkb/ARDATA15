@@ -354,7 +354,7 @@ public class MetricService {
 			int previousCount = 0;
 			int previousTotal = 0;
 			
-			AreaChart ac = new AreaChart(metricName, 0, 0, 0, null);
+			AreaChart ac = new AreaChart(metricName, 0, 0, 0, 0, null);
 			List<AreaChartData> acds = new ArrayList<>();
 			for( Metric metric : metricList) {
 				if( counter == 1 ) {
@@ -389,6 +389,7 @@ public class MetricService {
 			
 			ac.setData(acds);
 			ac.setCount(currentCount);
+			ac.setTotal(currentTotal);
 			ac.setChange(currentCount-previousCount);
 			if( currentCount == 0 ) {
 				ac.setPercentage(0);
