@@ -130,7 +130,7 @@ public class DashboardDao {
 	
 	public DashboardChart getServerOSChartData() {
 		DashboardChart chart = new DashboardChart("dashboard.server.os", "Server OS", "hBar", 4, new ArrayList<String>(), null, new ArrayList<DashboardChartData>());
-		String sql = "SELECT OPERATING_SYSTEM, COUNT(*) AS COUNT FROM AR_XRP_SERVER GROUP BY OPERATING_SYSTEM";
+		String sql = "SELECT SUBTYPE, COUNT(*) AS COUNT FROM AR_XRP_SERVER GROUP BY SUBTYPE";
 
 		List<Integer> counts = new ArrayList<>();
 		try {
