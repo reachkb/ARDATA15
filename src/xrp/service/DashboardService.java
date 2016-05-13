@@ -25,6 +25,41 @@ public class DashboardService {
 		return charts;
 	}
 	
+	/*
+	 * @ Added by Amrendra Mandal 
+	 * for Server Dashboard
+	 * on 5/11/2016 
+	 * 
+	 * */
+	public String[] getCMDBServerDashboardChartDefinitions() {
+		String[] cmdbServerDashboardCharts = {"cmdb_server_environment", "cmdb_server_operating_system", "cmdb_server_virtualVsPhysical"};
+		return cmdbServerDashboardCharts;
+	}
+	
+	public List<DashboardChart> getCmdbServerDashboardChartData() {
+		List<DashboardChart> charts = new ArrayList<>();
+		charts.add(getCMDBServerEnvironmentChart());
+		charts.add(getCMDBServerOprSysChartData());
+		charts.add(getCMDBServerVirVsPhyChartData());
+		
+		return charts;
+	}
+	public DashboardChart getCMDBServerEnvironmentChart() {
+		return (new DashboardDao()).getCMDBServerEnvironmentChart();
+	}
+
+	public DashboardChart getCMDBServerOprSysChartData() {
+		return (new DashboardDao()).getCMDBServerOprSysChartData();
+	}
+
+	public DashboardChart getCMDBServerVirVsPhyChartData() {
+		return (new DashboardDao()).getCMDBServerVirVsPhyChartData();
+	}	
+	/*
+	 * End
+	 * */
+	
+	
 	public DashboardChart getServerTrendChart() {
 		return (new DashboardDao()).getServerTrendChartData();
 	}
